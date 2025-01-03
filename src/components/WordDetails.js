@@ -12,10 +12,7 @@ function WordDetails({ word, data }) {
       <h2>{word}</h2>
       {meanings.map((meaning, index) => (
         <div key={index}>
-          <p><strong>Part of Speech:</strong> {meaning.partOfSpeech}</p>
           <p><strong>Definition:</strong> {meaning.definitions[0].definition}</p>
-          <p><strong>Example:</strong> {meaning.definitions[0].example || "N/A"}</p>
-          <p><strong>Synonyms:</strong> {meaning.synonyms.join(", ") || "N/A"}</p>
         </div>
       ))}
     </div>
