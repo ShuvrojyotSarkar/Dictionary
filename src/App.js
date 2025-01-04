@@ -20,8 +20,10 @@ function App() {
   };
 
   return (
-    <div className="app">
-      <h1>Dictionary App</h1>
+    <div className="bg-gray-100 min-h-screen p-6">
+      <h1 className="text-3xl font-bold text-center text-green-600 mb-3">
+        Dictionary App
+      </h1>
       <SearchBar onSearch={handleSearch} />
       {wordData && <WordDetails word={word} data={wordData} />}
     </div>
